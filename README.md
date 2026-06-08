@@ -1,178 +1,177 @@
-\# Indian Stock Market Performance Dashboard
+# Indian Stock Market Performance Dashboard
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
-The \*\*Indian Stock Market Performance Dashboard\*\* is a data analytics and visualization project developed to analyze stock market performance using historical stock price data. The project provides insights into top-performing and worst-performing stocks, sector-wise stock trends, cumulative returns, and market performance through interactive dashboards.
+The **Indian Stock Market Performance Dashboard** is a data analytics and visualization project developed to analyze stock market performance using historical stock price data. The project provides insights into top-performing and worst-performing stocks, sector-wise stock trends, cumulative returns, and market performance through interactive dashboards.
 
 
 
-The project integrates \*\*Python, SQL, Power BI, and Streamlit\*\* to create an end-to-end stock analysis system.
+The project integrates **Python, SQL, Power BI, and Streamlit** to create an end-to-end stock analysis system.
 
 
 
-\---
+---
 
 
 
-\## Objectives
+## Objectives
 
 
 
-\* Analyze historical stock market performance.
+* Analyze historical stock market performance.
 
-\* Identify \*\*top-performing and worst-performing stocks\*\*.
+* Identify **top-performing and worst-performing stocks**.
 
-\* Perform \*\*sector-wise stock analysis\*\*.
+* Perform **sector-wise stock analysis**.
 
-\* Visualize stock trends using \*\*Power BI\*\* and \*\*Streamlit dashboards\*\*.
+* Visualize stock trends using **Power BI** and **Streamlit dashboards**.
 
-\* Store cleaned stock data in a structured format for efficient querying.
+* Store cleaned stock data in a structured format for efficient querying.
 
 
 
-\---
+---
 
 
 
-\## Features
+## Features
 
 
 
-\### 1. Top 10 Gainers Analysis
+### 1. Top 10 Gainers Analysis
 
 
 
-\* Identifies top-performing stocks based on returns.
+* Identifies top-performing stocks based on returns.
 
-\* Visualized using bar charts.
+* Visualized using bar charts.
 
 
 
-\### 2. Top 10 Losers Analysis
+### 2. Top 10 Losers Analysis
 
 
 
-\* Displays lowest-performing stocks.
+* Displays lowest-performing stocks.
 
-\* Helps understand market downturns.
+* Helps understand market downturns.
 
 
 
-\### 3. Sector-wise Performance
+### 3. Sector-wise Performance
 
 
 
-\* Classifies stocks by sectors.
+* Classifies stocks by sectors.
 
-\* Calculates average sector returns.
+* Calculates average sector returns.
 
-\* Displays sector performance comparison.
+* Displays sector performance comparison.
 
 
 
-\### 4. Cumulative Return Analysis
+### 4. Cumulative Return Analysis
 
 
 
-\* Shows trend of top-performing stocks over time.
+* Shows trend of top-performing stocks over time.
 
-\* Helps analyze long-term growth.
+* Helps analyze long-term growth.
 
+### 5. Interactive Filtering
 
 
-\### 5. Interactive Filtering
 
+* Sector-based filtering using Streamlit sidebar.
 
+* Dynamic visualizations.
 
-\* Sector-based filtering using Streamlit sidebar.
 
-\* Dynamic visualizations.
 
+---
 
 
-\---
 
+## Tech Stack
 
 
-\## Tech Stack
 
+### Programming Language
 
 
-\### Programming Language
 
+* Python
 
 
-\* Python
 
+### Database
 
 
-\### Database
 
+* SQLite
 
 
-\* Sqlite3
 
+### Libraries Used
 
 
-\### Libraries Used
 
+* Pandas
 
+* Matplotlib
 
-\* Pandas
+* Seaborn
 
-\* Matplotlib
+* Streamlit
 
-\* Seaborn
 
-\* Streamlit
 
+### Visualization Tools
 
 
-\### Visualization Tools
 
+* Power BI
 
+* Streamlit
 
-\* Power BI
 
-\* Streamlit
 
+---
 
 
-\---
 
-
-
-\## Project Structure
-
+## Project Structure
 
 
 ```
+
+
 
 stock-project/
 
 │── app.py
 
-│── stock\\\_cleaning.py
+│── cleaning.py
 
-│── stock\\\_insert.py
+│── insert.py
 
-│── stock\\\_analysis.py
+│── analysis.py
 
 │── stock.db
 
-│── cleaned\\\_stock\\\_data.csv
+│── cleaned_stock_data.csv
 
-│── stock\\\_dashboard.pbix
+│── stock_dashboard.pbix
 
 │── README.md
 
 │── requirements.txt
 
-│── csv\\\_output.zip
+│── csv_output.zip
 
 
 
@@ -180,91 +179,67 @@ stock-project/
 
 
 
-\---
+---
 
 
 
-\## Workflow
+## Workflow
 
 
 
-\### Step 1: Data Collection
+### Step 1: Data Collection
 
 
 
-\* Historical stock market data collected.
+* Historical stock market data collected.
 
-\* Raw dataset imported into Python.
-
-
-
-\### Step 2: Data Cleaning
+* Raw dataset imported into Python.
 
 
+### Step 2: Data Cleaning
 
-\* Missing values handled.
 
-\* Duplicate records removed.
+* Missing values handled.
 
-\* Date formatting corrected.
+* Duplicate records removed.
 
-\* Sector mapping added.
+* Date formatting corrected.
+
+* Sector mapping added.
 
 
 
-\### Step 3: Data Processing
+### Step 3: Data Processing
 
 
 
-\* Calculated:
+* Calculated:
 
 
 
-&#x20; \* Daily returns
+* Daily returns
 
-&#x20; \* Cumulative returns
+* Cumulative returns
 
-&#x20; \* Yearly returns
+* Yearly returns
 
-\* Sector classification performed.
-
-
-
-\### Step 4: Database Storage
+* Sector classification performed.
 
 
 
-\* Cleaned dataset stored in SQL database.
+### Step 4: Database Storage
 
 
 
-\### Step 5: Data Visualization
+* Cleaned dataset stored in SQL database.
 
 
 
-\#### Power BI Dashboard
+### Step 5: Data Visualization
 
 
 
-Created:
-
-
-
-\* KPI Cards
-
-\* Top 10 Gainers
-
-\* Top 10 Losers
-
-\* Sector Performance
-
-\* Trend Analysis
-
-\* Interactive Slicers
-
-
-
-\#### Streamlit Dashboard
+#### Power BI Dashboard
 
 
 
@@ -272,40 +247,64 @@ Created:
 
 
 
-\* Interactive stock dashboard
+* KPI Cards
 
-\* Sector filtering
+* Top 10 Gainers
 
-\* Dynamic charts
+* Top 10 Losers
 
-\* KPI metrics
+* Sector Performance
 
+* Trend Analysis
 
-
-\---
-
-
-
-\## Installation \& Execution
+* Interactive Slicers
 
 
 
-\### Clone Repository
+#### Streamlit Dashboard
 
 
+
+Created:
+
+
+
+* Interactive stock dashboard
+
+* Sector filtering
+
+* Dynamic charts
+
+* KPI metrics
+
+
+
+---
+
+## Project Links
+
+### GitHub Repository:
+https://github.com/sirishasutrave2/Indian-stock-market-dashboard
+
+### LinkedIn Project Post:
+https://www.linkedin.com/posts/dr-sirisha-jemene-312b45277_python-sql-powerbi-ugcPost-7469752519146262529-PUCy/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOfW34BHjXIG8j-mwtcIsR5kfINrYcfstI
+
+### Demo Video:
+https://www.linkedin.com/posts/dr-sirisha-jemene-312b45277_python-sql-powerbi-ugcPost-7469752519146262529-PUCy/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOfW34BHjXIG8j-mwtcIsR5kfINrYcfstI
+
+
+## Installation & Execution
+
+
+### Clone Repository
 
 ```bash
+git clone https://github.com/sirishasutrave2/Indian-stock-market-dashboard.git
 
-git clone https://github.com/Sirisha Jemene/stock\_market\_dashboard.git
-
-cd stock\_market\_dashboard
-
-```
+cd Indian-stock-market-dashboard
 
 
-
-\### Install Dependencies
-
+### Install Dependencies
 
 
 ```bash
@@ -314,9 +313,7 @@ pip install -r requirements.txt
 
 ```
 
-
-
-\### Run Streamlit Application
+### Run Streamlit Application
 
 
 
@@ -328,15 +325,15 @@ python -m streamlit run app.py
 
 
 
-\---
+---
 
 
 
-\## Dashboard Preview
+## Dashboard Preview
 
 
 
-\### Power BI Dashboard
+### Power BI Dashboard
 
 
 
@@ -344,19 +341,19 @@ Includes:
 
 
 
-\* Total Stocks
+* Total Stocks
 
-\* Average Close Price
+* Average Close Price
 
-\* Average Volume
+* Average Volume
 
-\* Top Gainers \& Losers
+* Top Gainers & Losers
 
-\* Sector-wise Performance
+* Sector-wise Performance
 
 
 
-\### Streamlit Dashboard
+### Streamlit Dashboard
 
 
 
@@ -364,41 +361,41 @@ Interactive web dashboard with:
 
 
 
-\* Sector filter
+* Sector filter
 
-\* Stock trends
+* Stock trends
 
-\* Cumulative returns
+* Cumulative returns
 
-\* Market insights
-
-
-
-\---
+* Market insights
 
 
 
-\## Results
+---
 
 
 
-\* Developed a fully functional stock analysis dashboard.
-
-\* Generated insights on market trends and sector performance.
-
-\* Enabled interactive exploration using Power BI and Streamlit.
+## Results
 
 
 
-\---
+* Developed a fully functional stock analysis dashboard.
+
+* Generated insights on market trends and sector performance.
+
+* Enabled interactive exploration using Power BI and Streamlit.
 
 
 
-\## Coding Standards
+---
 
 
 
-This project follows \*\*PEP 8 Python Coding Standards\*\*:
+## Coding Standards
+
+
+
+This project follows **PEP 8 Python Coding Standards**:
 
 
 
@@ -406,31 +403,31 @@ https://www.python.org/dev/peps/pep-0008/
 
 
 
-\---
+---
 
 
 
-\## Future Enhancements
+## Future Enhancements
 
 
 
-\* Real-time stock market API integration.
+* Real-time stock market API integration.
 
-\* Predictive stock price analysis using Machine Learning.
+* Predictive stock price analysis using Machine Learning.
 
-\* Advanced financial indicators.
+* Advanced financial indicators.
 
-\* Live dashboard deployment.
-
-
-
-\---
+* Live dashboard deployment.
 
 
 
-\## Author
+---
 
 
 
-\*\*Sirisha Jemene\*\*
+## Author
+
+
+
+**Sirisha Jemene**
 
